@@ -194,17 +194,69 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parents('.menu-btn').toggleClass('active');
 		$('.menu-btn__list').slideToggle();
+		$('body').toggleClass('fixed');
 	});
 
 	//TEXT-SLIDER
 	if (('.product-slider').length>0) {
 		$('.product-slider').slick({
-			dots: true,
+			dots: false,
 			arrows:true,
 			infinite: false,
 			fade: true,
 			useTransform:true,
+			asNavFor: '.slider-nav',
 		});
+		$('.slider-nav').slick({
+		  	slidesToShow: 4,
+		  	slidesToScroll: 1,
+		  	asNavFor: '.product-slider',
+		  	dots: false,
+		  	arrows:false,
+		  	focusOnSelect: true,
+		  	infinite:false,
+		  	responsive: [
+                {
+                  breakpoint: 1300,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow:4,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow:3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 400,
+                  settings: {
+                    slidesToShow:2,
+                    slidesToScroll: 1,
+                  }
+                },
+            ]
+		});
+		// $('.slider-nav > div').click(function() {
+		//     $('.product-slider').slick('slickGoTo',$(this).index());
+		// 	alert($(this).index());
+		// })
 	};
 
 	//TABS DEFAULT
@@ -227,6 +279,12 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+
+
+
+
+	
 });
 
 
@@ -266,5 +324,6 @@ $('body').append(
 		<li><a href="projects-inner(yellow).html">Projects-inner(yellow)</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="application.html">Application</a></li> \
+		<li><a href="articles.html">Articles</a></li> \
 	</ol> \
 </div>');

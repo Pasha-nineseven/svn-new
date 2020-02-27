@@ -9,6 +9,7 @@
 		<link href="js/vendors/slick/slick.css" rel="stylesheet">
 		<link href="js/vendors/fancybox/jquery.fancybox.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-new.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,18 +24,126 @@
 				<header class="page-header">
 					<div class="page-header__menu">
 						<div class="container-fluid">
-							<nav class="page-header__nav">
-								<a href="#" class="page-header__link">Сельскохозяйственная техника</a>
-								<a href="#" class="page-header__link">Промыленное оборудование</a>
-								<a href="#" class="page-header__link page-header__link--active">
-									Сервис и запчасти
-								</a>
-								<a href="#" class="page-header__link">Проекты</a>
-								<a href="#" class="page-header__link">Финансирование</a>
-								<a href="#" class="page-header__link">Новости</a>
-								<a href="#" class="page-header__link">Контакты</a>
-								<a href="#" class="page-header__link">О компании</a>
-							</nav>
+							<div class="page-header__wrap">
+								<div class="page-header-toggle">
+									<a href="#" class="page-header-toggle__link js-page-header-toggle__link">Техника</a>
+									<div class="page-header-toggle-view">
+										<div class="page-header-toggle-view__toggle">
+											<div class="page-header-toggle-cat">
+												<a href="#" class="page-header-toggle-cat__link js-page-header-toggle-cat__link active" data-menu="1">По назначению</a>
+												<a href="#" class="page-header-toggle-cat__link js-page-header-toggle-cat__link" data-menu="2">По производителю</a>
+												<a href="#" class="page-header-toggle-cat__link js-page-header-toggle-cat__link" data-menu="3">Техника с наработкой</a>
+											</div>
+											<div class="page-header-toggle-list">
+												<div class="page-header-toggle-view-menu" id="menu1">
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Тракторы</a>
+														<a href="#" class="page-header-toggle-list__second">Тракторы 110 л.с. </a>
+														<a href="#" class="page-header-toggle-list__second">Тракторы 125-165 л.с.</a>
+														<a href="#" class="page-header-toggle-list__second">Тракторы 155-224 л.с.</a>
+														<a href="#" class="page-header-toggle-list__second">Тракторы 280-340 л.с.</a>
+														<a href="#" class="page-header-toggle-list__second">Тракторы 406-608 л.с.</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top active">Почвообработка</a>
+														<a href="#" class="page-header-toggle-list__second">Культиваторы диско-лаповые</a>
+														<a href="#" class="page-header-toggle-list__second">Культиваторы лаповые</a>
+														<a href="#" class="page-header-toggle-list__second">Дисковые бороны</a>
+														<a href="#" class="page-header-toggle-list__second">Плуги</a>
+														<a href="#" class="page-header-toggle-list__second">Почвоуплотнительные катки</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Посевная техника</a>
+														<a href="#" class="page-header-toggle-list__second">Пневматические сеялки зерновые</a>
+														<a href="#" class="page-header-toggle-list__second">Механические сеялки зерновые</a>
+														<a href="#" class="page-header-toggle-list__second">Сеялки точного высева</a>
+														<a href="#" class="page-header-toggle-list__second">Сеялки прямого высева</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Зерноуборочные комбайны</a>
+														<a href="#" class="page-header-toggle-list__second">Клавишные комбайны</a>
+														<a href="#" class="page-header-toggle-list__second">Роторные комбайны</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Техника для внесения защиты</a>
+														<a href="#" class="page-header-toggle-list__second">Опрыскиватели прицепные</a>
+														<a href="#" class="page-header-toggle-list__second">Опрыскиватели самоходные</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Кормозаготовительная техника</a>
+														<a href="#" class="page-header-toggle-list__second">Навесные косилки полевые</a>
+														<a href="#" class="page-header-toggle-list__second">Косилки 3-х секционные</a>
+														<a href="#" class="page-header-toggle-list__second">Грабли</a>
+														<a href="#" class="page-header-toggle-list__second">Ворошилки</a>
+														<a href="#" class="page-header-toggle-list__second">Косилки самоходные</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Жатки зерновые</a>
+														<a href="#" class="page-header-toggle-list__top">Жатки для уборки кукурузы на зерно</a>
+														<a href="#" class="page-header-toggle-list__top">Кормоуборочные комбайны</a>
+														<a href="#" class="page-header-toggle-list__top">Телескопические погрузчики</a>
+													</div>
+												</div>
+
+												<div class="page-header-toggle-view-menu dnone" id="menu2">
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 1</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 1</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 1</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 1</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+												</div>
+												<div class="page-header-toggle-view-menu dnone" id="menu3">
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 2</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 2</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 2</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+													<div class="page-header-toggle-list__item">
+														<a href="#" class="page-header-toggle-list__top">Test 2</a>
+														<a href="#" class="page-header-toggle-list__second">Test</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<nav class="page-header__nav">
+							<!-- 		<a href="#" class="page-header__link">Сельскохозяйственная техника</a>
+									<a href="#" class="page-header__link">Промыленное оборудование</a> -->
+									<a href="#" class="page-header__link page-header__link--active">
+										Сервис и запчасти
+									</a>
+									<a href="#" class="page-header__link">Проекты</a>
+									<a href="#" class="page-header__link">Новости</a>
+									<a href="#" class="page-header__link">Статьи</a>
+									<a href="#" class="page-header__link">Контакты</a>
+									<a href="#" class="page-header__link">О компании</a>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="page-header__bottom">
@@ -66,35 +175,138 @@
 									<span class="burger-icon"></span>
 								</a>
 								<div class="menu-btn__list">
-									<a href="#" class="menu-btn__link">Сельскохозяйственная техника</a>
-									<a href="#" class="menu-btn__link">Промышленное оборудование</a>
-									<a href="#" class="menu-btn__link">Сервис и запчасти</a>
-									<a href="#" class="menu-btn__link">Проекты</a>
-									<a href="#" class="menu-btn__link">Финансирование</a>
-									<a href="#" class="menu-btn__link">Новости</a>
-									<a href="#" class="menu-btn__link">Контакты</a>
-									<a href="#" class="menu-btn__link">О компании</a>
-									<div class="menu-btn__phones">
-										<div class="menu-btn__phones-item">
-											+375 33 000-00-00
-											<span>Телефон в Беларуси</span>
+									<div class="menu-scroll">
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link menu-btn__link--toggle js-menu-btn__link--toggle">
+												<span>По назначению</span>
+											</a>
+											<div class="menu-list">
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Тракторы</a>
+													<a href="#" class="menu-list__link-third">Тракторы 110 л.с. </a>
+													<a href="#" class="menu-list__link-third">Тракторы 125-165 л.с.</a>
+													<a href="#" class="menu-list__link-third">Тракторы 155-224 л.с.</a>
+													<a href="#" class="menu-list__link-third">Тракторы 280-340 л.с.</a>
+													<a href="#" class="menu-list__link-third">Тракторы 406-608 л.с.</a>
+												</div>
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Зерноуборочные комбайны</a>
+													<a href="#" class="menu-list__link-third">Клавишные комбайны</a>
+													<a href="#" class="menu-list__link-third">Роторные комбайны</a>
+												</div>
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Жатки зерновые</a>
+													<a href="#" class="menu-list__link-second">Жатки для уборки кукурузы на зерно</a>
+													<a href="#" class="menu-list__link-second">Кормоуборочные комбайны </a>
+													<a href="#" class="menu-list__link-second">Телескопические погрузчики</a>
+												</div>
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Почвообработка</a>
+													<a href="#" class="menu-list__link-third">Культиваторы диско-лаповые</a>
+													<a href="#" class="menu-list__link-third">Культиваторы лаповые</a>
+													<a href="#" class="menu-list__link-third">Дисковые бороны</a>
+													<a href="#" class="menu-list__link-third">Плуги</a>
+													<a href="#" class="menu-list__link-third">Почвоуплотнительные катки</a>
+												</div>
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Техника для внесения защиты растений</a>
+													<a href="#" class="menu-list__link-third">Опрыскиватели прицепные</a>
+													<a href="#" class="menu-list__link-third">Опрыскиватели самоходные</a>
+												</div>
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Посевная техника</a>
+													<a href="#" class="menu-list__link-third">Пневматические сеялки зерновые</a>
+													<a href="#" class="menu-list__link-third">Механические сеялки зерновые</a>
+													<a href="#" class="menu-list__link-third">Сеялки точного высева</a>
+													<a href="#" class="menu-list__link-third">Сеялки прямого посева</a>
+												</div>
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Кормозаготовительная техника</a>
+													<a href="#" class="menu-list__link-third">Навесные косилки полевые</a>
+													<a href="#" class="menu-list__link-third">Грабли</a>
+													<a href="#" class="menu-list__link-third">Ворошилки</a>
+													<a href="#" class="menu-list__link-third">Косилки самоходные</a>
+												</div>
+											</div>
 										</div>
-										<div class="menu-btn__phones-item">
-											+375 33 000-00-00
-											<span>Телефон в России</span>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link menu-btn__link--toggle js-menu-btn__link--toggle">
+												<span>По производителю</span>
+											</a>
+											<div class="menu-list">
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+												</div>
+											</div>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link menu-btn__link--toggle js-menu-btn__link--toggle">
+												<span>Техника с наработкой</span>
+											</a>
+											<div class="menu-list">
+												<div class="menu-list__item">
+													<a href="#" class="menu-list__link-second">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+													<a href="#" class="menu-list__link-third">Test</a>
+												</div>
+											</div>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Сельскохозяйственная техника</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Промышленное оборудование</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Сервис и запчасти</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Проекты</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Финансирование</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Новости</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">Контакты</a>
+										</div>
+										<div class="menu-btn__item">
+											<a href="#" class="menu-btn__link">О компании</a>
 										</div>
 									</div>
-									<div class="menu-btn__links">
-										<a href="#" class="page-header__order">
-											<span>Заказать звонок</span>
-										</a>
-										<div class="page-header__lang">
-											<a href="#">
-												<i>
-													<img src="img/content/rus.jpg" alt="">
-												</i>
-												<span>Рус</span>
+									<div class="menu-bottom">
+										<div class="menu-btn__phones">
+											<div class="menu-btn__phones-item">
+												+375 33 000-00-00
+												<span>Телефон в Беларуси</span>
+											</div>
+											<div class="menu-btn__phones-item">
+												+375 33 000-00-00
+												<span>Телефон в России</span>
+											</div>
+										</div>
+										<div class="menu-btn__links">
+											<a href="#" class="page-header__order">
+												<span>Заказать звонок</span>
 											</a>
+											<div class="page-header__lang">
+												<a href="#">
+													<i>
+														<img src="img/content/rus.jpg" alt="">
+													</i>
+													<span>Рус</span>
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -105,129 +317,262 @@
 				<div class="breadcrumbs">
 					<div class="container-fluid">
 						<a href="#" class="breadcrumbs__item">Главная</a>
-						<span class="breadcrumbs__item">Сельскохозяйственная техника</span>
+						<a href="#" class="breadcrumbs__item">Техника</a>
+						<a href="#" class="breadcrumbs__item">По назначению</a>
+						<a href="#" class="breadcrumbs__item">Тракторы</a>
+						<span class="breadcrumbs__item">Тракторы 110 л.с.</span>
 					</div>
 				</div>
 				<div class="page-content workarea">
 					<div class="container-fluid">
-						<h1>Сельскохозяйственная техника</h1>
-						<div class="catalog">
-							<div class="row">
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog1.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+						<h1>Тракторы 110 л.с.</h1>
+						<div class="row catalog">
+							<div class="col-md-3 page-aside">
+								<div class="page-aside__wrap">
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Тракторы
 										</a>
+										<div class="page-aside-list">
+											<span class="page-aside-list__item active">Тракторы 110 л.с. </span>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Тракторы</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog2.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Зерноуборочные комбайны
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Зерноуборочные комбайны</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog3.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Клавишные комбайны
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Кормоуборочные комбайны</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog4.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Роторные комбайны
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Косилки самоходные</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog5.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Жатки зерновые
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Телескопические погрузчики</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog6.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Жатки для уборки кукурузы на зерно
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Пресс - подборщики</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog7.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Кормоуборочные комбайны
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Техника для обработки почвы</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog8.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Телескопические погрузчики
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Опрыскиватели</span></a>
-								</div>
-								<div class="col-sm-4 catalog__item">
-									<div class="catalog__item-inner">
-										<a href="#" class="catalog__link" style="background: url(img/catalog/catalog9.jpg);">
-											<div class="catalog__btn-wrap">
-												<div class="catalog__cell">
-													<span class="catalog__btn">Перейти в раздел</span>
-												</div>
-											</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Почвообработка
 										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
 									</div>
-									<a href="#" class="catalog__name"><span>Коммунальная техника</span></a>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Плуги
+										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
+									</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Техника для внесения защиты растений
+										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
+									</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Посевная техника
+										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
+									</div>
+									<div class="page-aside__item">
+										<a href="#" class="page-aside__toggle js-page-aside__toggle">
+											Кормозаготовительная техника
+										</a>
+										<div class="page-aside-list">
+											<a href="#" class="page-aside-list__item">Тракторы 110 л.с. </a>
+											<a href="#" class="page-aside-list__item">Тракторы 125-165 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 155-224 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 280-340 л.с.</a>
+											<a href="#" class="page-aside-list__item">Тракторы 406-608 л.с.</a>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<h2>
-							Мощная техника для любых нужд
-						</h2>
-						<div class="catalog__description">
-							Над центральной площадью Припяти звучат тревожные возгласы сопровождающих: «Come back!» Они адресованы хорошо одетым европейцам и азиатам, судорожно разбегающимся от автобусов. Впервые попавшие в легендарный мертвый город иноземные журналисты, поддавшись какой-то непонятной эйфории, устремляются в разные стороны — искать точки для «селфи» и стендапов. «Дорвались…» — ухмыляется, глядя на это, кто-то из украинских коллег. 
+							<div class="col-md-9 page-gen">
+								<div class="row">
+									<div class="col-sm-4 catalog__item">
+										<div class="catalog__item-inner">
+											<a href="#" class="catalog__link" style="background: url(img/content/catalog-test.jpg);">
+												<div class="catalog__title">new holland t9</div>
+												<div class="catalog__btn-wrap">
+													<div class="catalog__cell">
+														<span class="catalog__btn">Перейти в раздел</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4 catalog__item">
+										<div class="catalog__item-inner">
+											<a href="#" class="catalog__link" style="background: url(img/content/catalog-test.jpg);">
+												<div class="catalog__title">культиваторы case ih tiger-mate 255</div>
+												<div class="catalog__btn-wrap">
+													<div class="catalog__cell">
+														<span class="catalog__btn">Перейти в раздел</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4 catalog__item">
+										<div class="catalog__item-inner">
+											<a href="#" class="catalog__link" style="background: url(img/content/catalog-test.jpg);">
+												<div class="catalog__title">new holland t9</div>
+												<div class="catalog__btn-wrap">
+													<div class="catalog__cell">
+														<span class="catalog__btn">Перейти в раздел</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4 catalog__item">
+										<div class="catalog__item-inner">
+											<a href="#" class="catalog__link" style="background: url(img/content/catalog-test.jpg);">
+												<div class="catalog__title">new holland t9</div>
+												<div class="catalog__btn-wrap">
+													<div class="catalog__cell">
+														<span class="catalog__btn">Перейти в раздел</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4 catalog__item">
+										<div class="catalog__item-inner">
+											<a href="#" class="catalog__link" style="background: url(img/content/catalog-test.jpg);">
+												<div class="catalog__title">new holland t9</div>
+												<div class="catalog__btn-wrap">
+													<div class="catalog__cell">
+														<span class="catalog__btn">Перейти в раздел</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-4 catalog__item">
+										<div class="catalog__item-inner">
+											<a href="#" class="catalog__link" style="background: url(img/content/catalog-test.jpg);">
+												<div class="catalog__title">new holland t9</div>
+												<div class="catalog__btn-wrap">
+													<div class="catalog__cell">
+														<span class="catalog__btn">Перейти в раздел</span>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="paging">
+									<a href="#" class="paging__item--left">Предыдущая</a>
+									<span class="paging__item paging__item--active">1</span>
+									<a href="#" class="paging__item">2</a>
+									<a href="#" class="paging__item">3</a>
+									<a href="#" class="paging__item">4</a>
+									<a href="#" class="paging__item">5</a>
+									<a href="#" class="paging__item--right">Следующая</a>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -410,5 +755,6 @@
 		<script src="js/vendors/slick/slick.min.js"></script>
 		<script src="js/vendors/fancybox/jquery.fancybox.pack.js"></script>
 		<script src="js/interface.js"></script>
+		<script src="js/interface-new.js"></script>
 	</body>
 </html>
