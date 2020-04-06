@@ -661,6 +661,10 @@ body.fixed{
   position: relative;
   top: -79px;
 }
+.projects__item{
+  position: relative;
+  z-index: ;
+}
 
 
 
