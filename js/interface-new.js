@@ -23,6 +23,13 @@ $("body").on("click", ".js-page-header-toggle__link", function(e){
     e.preventDefault();
     $('.page-header-toggle-view').slideToggle(250);
 });
+$(document).click(function (e){ // событие клика по веб-документу
+    var div = $(".page-header-toggle"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('.page-header-toggle-view').slideUp(250);
+    }
+});
 
 $("body").on("click", ".js-page-header-toggle-cat__link", function(e){
     e.preventDefault();
@@ -65,3 +72,15 @@ if ($('.index-top-slider').length>0) {
         $('.index-top-add__item.slide-' + next).addClass('active');
     });
 }
+
+
+$(document).ready(function() {
+    if ($('.video-item').length>0) {
+        $('.video-item').each(function(index, element) {
+            var video_item = $(this);
+                width_init = video_item.outerWidth(),
+            video_item.css({'height': width_init/2});
+        });
+    }
+   
+});
