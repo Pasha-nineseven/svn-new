@@ -692,6 +692,15 @@ body.fixed{
 .accordeon__info{
   padding-top: 15px;
 }
+.pr__logo{
+  margin-bottom: 20px;
+  width: 220px;
+}
+.pr__logo img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 @media screen and (max-width: 1460px){
   .index-top-add-wrap {
