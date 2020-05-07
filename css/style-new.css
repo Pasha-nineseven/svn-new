@@ -696,8 +696,8 @@ body.fixed{
   padding-top: 15px;
 }
 .pr__logo{
-  margin-bottom: 20px;
   width: 220px;
+  margin-bottom: 20px;
 }
 .pr__logo img{
   display: block;
@@ -705,7 +705,21 @@ body.fixed{
   height: auto;
 }
 
-.catalog__item
+.page-title{
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+.page-title h1{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
 
 @media screen and (max-width: 1460px){
