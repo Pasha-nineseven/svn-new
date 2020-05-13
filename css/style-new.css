@@ -547,6 +547,7 @@ body.fixed{
   border-right: 0;*/
 }
 .index-top-add__item{
+    min-height: 50px; 
     width: 135px;
     color: #fff;
     font-size: 14px;
