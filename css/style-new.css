@@ -750,6 +750,13 @@ body.fixed{
 .menu-bottom {
   width: 100%;
 }
+.gmaps_maps {
+  margin-left: 0;
+}
+html, body{
+  height: auto;
+}
+/* .gmaps_maps */
 
 @media screen and (max-width: 1460px){
   .index-top-add-wrap {
